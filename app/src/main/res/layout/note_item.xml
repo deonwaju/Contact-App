@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="vertical"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightyellow"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/text_view_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:hint="1"
+                android:padding="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@id/text_view_priority"
+                android:layout_toLeftOf="@id/text_view_priority"
+                android:ellipsize="end"
+                android:hint="Name"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightyellow">
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Description"
+                android:maxLines="4"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:paddingLeft="8dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
